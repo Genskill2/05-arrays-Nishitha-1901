@@ -80,24 +80,5 @@ int factors (int num, int b[])
 
   
 
-void main ()
-{
-  int n=0;
-  scanf ("%d", &n);
-  int a[n]={0};
-  for (int i=0;i<n;i++)
-  {
-    scanf ("%d", &a[i]);
-  }
-  int b[50]={0};
-  int num=0;
-  scanf ("%d", &num);
-  
-  max ( a,  n);
-  min ( a,  n);
-  average ( a,  n);
-  mode ( a,  n);
-  factors (num , b);
-}
 
 
