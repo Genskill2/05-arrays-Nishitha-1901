@@ -61,7 +61,7 @@ int mode (int a[], int n)
 }
 
 
-int factors (int n, int a[])
+int factors (int num, int b[])
 {
   int c=0;
   while (n%2==0)
@@ -82,11 +82,21 @@ int factors (int n, int a[])
 
 void main ()
 {
+  int n=0;
+  scanf ("%d", &n);
+  for (int i=0;i<n;i++)
+  {
+    scanf ("%d", &a[i]);
+  }
+  int b[50]={0};
+  int num=0;
+  scanf ("%d", &num);
+  
   max ( a,  n);
   min ( a,  n);
   average ( a,  n);
   mode ( a,  n);
-  factors (n , a);
+  factors (num , b);
 }
 
 
