@@ -37,9 +37,52 @@ float average (int a[] , int n)
   return (sum/n);
 }
 
+
+int mode (int a[], int n)
+{
+  int mv=0,mc=0,c=0;
+  for (int i=0;i<n;i++)
+  {
+    c=0;
+    for (int j=0;j<n;j++)
+    {
+      if (a[i]==a[j])
+      {
+        c++;
+      }
+    }
+    if (c>mc)
+    {
+      mc=c;
+      mv=a[i];
+    }
+  }
+  return mv;
+}
+
+
+int factors (int n, int a[])
+{
+  int c=0;int a[100]={0};
+  while (n%2==0)
+  {
+    a[c]=0;c++;
+  }
+  for (int i=0;i<n/2 ;i+=2)
+  {
+    while (n%i==0)
+    {
+      a[c]=i;c++;
+    }
+  }
+  return a;
+}
+
+  
+
 void main ()
 {
-  
+  return 0;
 }
 
 
