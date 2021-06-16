@@ -64,18 +64,18 @@ int mode (int a[], int n)
 int factors (int num, int b[])
 {
   int c=0;
-  while (n%2==0)
+  while (num%2==0)
   {
-    a[c]=0;c++;
+    b[c]=0;c++;num/=2;
   }
-  for (int i=0;i<n/2 ;i+=2)
+  for (int i=0;i<num/2 ;i+=2)
   {
-    while (n%i==0)
+    while (num%i==0)
     {
-      a[c]=i;c++;
+      b[c]=i;c++;num/=i;
     }
   }
-  return a;
+  return b;
 }
 
   
