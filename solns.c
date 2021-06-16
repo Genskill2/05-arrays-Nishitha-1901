@@ -63,7 +63,7 @@ int mode (int a[], int n)
 
 int factors (int n, int a[])
 {
-  int c=0;int a[100]={0};
+  int c=0;
   while (n%2==0)
   {
     a[c]=0;c++;
@@ -82,7 +82,11 @@ int factors (int n, int a[])
 
 void main ()
 {
-  return 0;
+  max ( a,  n);
+  min ( a,  n);
+  average ( a,  n);
+  mode ( a,  n);
+  factors (n , a);
 }
 
 
